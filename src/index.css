@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+/* Ambit Font Family */
+
+@font-face {
+  font-family: "Ambit";
+  src: url("../src/assets/fonts/Ambit-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Ambit";
+  src: url("../src/assets/fonts/Ambit-ThinItalic.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Ambit";
+  src: url("../src/assets/fonts/Ambit-ExtraLight.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ambit";
+  src: url("../src/assets/fonts/Ambit-ExtraLightItalic.otf") format("opentype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Ambit";
+  src: url("../src/assets/fonts/Ambit-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ambit";
+  src: url("../src/assets/fonts/Ambit-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Ambit";
+  src: url("../src/assets/fonts/Ambit-Regular.ttf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ambit";
+  src: url("../src/assets/fonts/Ambit-Italic.ttf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Ambit";
+  src: url("../src/assets/fonts/Ambit-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ambit";
+  src: url("../src/assets/fonts/Ambit-SemiBoldItalic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Ambit";
+  src: url("../src/assets/fonts/Ambit-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ambit";
+  src: url("../src/assets/fonts/Ambit-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Ambit";
+  src: url("../src/assets/fonts/Ambit-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ambit";
+  src: url("../src/assets/fonts/Ambit-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@theme {
+  --font-sans: "Ambit", sans-serif;
+  --font-urbanist: "Urbanist", sans-serif;
+  --color-primary: #001856;
+  --color-heading: #000000;
+  --color-paragraph: #707070;
+  --color-accent: #0048ff;
+  --color-paragraph-2: #303030;
+  --color-paragraph-3: #505050;
+  --color-paragraph-4: #404040;
+  --color-paragraph-5: #606060;
+  --color-border: #dddddd;
+  --color-subtitle: #101010;
+  --color-subtitle-2: #202020;
+  --color-white: #ffffff;
+  --color-footer: #e4e4e4;
+  --color-background: #4c7fff;
+  --color-background-2: #f7f7f7;
+  --color-input: #ffffff0f;
+}
+
+/* .font-urbanist {
+  font-family: "Urbanist", sans-serif;
+}
+
+.font-sans {
+  font-family: "Ambit", sans-serif;
+} */
+
+/* Custom font Style */
+.primary-heading {
+  @apply font-sans text-4xl font-bold;
+}
+
+.secondary-heading {
+  @apply font-sans text-2xl font-bold;
+}
+
+.secondary-heading-2 {
+  @apply font-sans text-2xl font-semibold;
+}
+
+.peragraph {
+  @apply font-urbanist text-base font-normal leading-[27px];
+}
+
+.accent {
+  @apply font-sans text-[15px] leading-[100%] font-normal;
+}
+
+.menu-item {
+  @apply font-sans text-base font-normal;
+}
+
+.hero-heading {
+  @apply font-sans text-6xl font-bold leading-18;
+}
+
+.sub-heading {
+  @apply font-sans text-base font-medium;
+}
+
+.custom-input[type="checkbox"] {
+  @apply hidden;
+}
+
+.colortype1[type="checkbox"]:checked + label {
+  @apply bg-white text-black;
+}
+
+.colortype2[type="checkbox"]:checked + label {
+  @apply bg-white text-black;
+}
+
+@media (max-width: 1024px) {
+  .primary-heading {
+    @apply font-sans text-[32px] font-bold leading-10.5;
+  }
+
+  .secondary-heading {
+    @apply font-sans text-[22px] font-bold leading-6.5;
+  }
+
+  .hero-heading {
+    @apply font-sans text-[45px] font-bold leading-[55px];
+  }
+}
+
+@media (max-width: 767px) {
+  .primary-heading {
+    @apply font-sans text-[28px] font-bold leading-9;
+  }
+
+  .hero-heading {
+    @apply font-sans text-[35px] font-bold leading-[45px];
+  }
+}
+
+@media (max-width: 400px) {
+  .primary-heading {
+    @apply font-sans text-[24px] font-bold leading-7.5;
+  }
+
+  .secondary-heading {
+    @apply font-sans text-[20px] font-bold leading-6;
+  }
+
+  .hero-heading {
+    @apply font-sans text-[28px] font-bold leading-[38px];
+  }
+}
+
+/* .hero-bg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #f3f4f6;
+  overflow: hidden;
+} */
+
+.bulbs1 {
+  width: 1037px;
+  height: 1037px;
+  background: #0088ff;
+  opacity: 0.3;
+  border-radius: 50%;
+  filter: blur(350px);
+  transform: translateX(10%) translateY(50%);
+  animation: bulbsMove1 10s ease-in-out infinite;
+}
+
+.bulbs2 {
+  width: 1037px;
+  height: 1037px;
+  background: #8f38ff;
+  opacity: 0.3;
+  border-radius: 50%;
+  filter: blur(350px);
+  transform: translateX(50%) translateY(51%);
+  animation: bulbsMove2 10s ease-in-out infinite;
+}
+
+.bulbs3 {
+  width: 379px;
+  height: 379px;
+  background: #8f38ff;
+  opacity: 0.3;
+  border-radius: 50%;
+  filter: blur(200px);
+  left: 90%;
+  top: 45%;
+  animation: bulbsMove3 10s ease-in-out infinite;
+}
+
+.bulbs4 {
+  width: 465px;
+  height: 465px;
+  background: #0088ff;
+  opacity: 0.3;
+  border-radius: 50%;
+  filter: blur(200px);
+  left: 90%;
+  top: 45%;
+  animation: bulbsMove4 10s ease-in-out infinite;
+}
+
+@keyframes bulbsMove1 {
+  0% {
+    transform: translateX(-10%) translateY(46%);
+  }
+  25% {
+    transform: translateX(55%) translateY(-45%);
+  }
+  50% {
+    transform: translateX(98%) translateY(22%);
+  }
+  75% {
+    transform: translateX(90%) translateY(50%);
+  }
+  100% {
+    transform: translateX(-10%) translateY(46%);
+  }
+}
+
+@keyframes bulbsMove2 {
+  0% {
+    transform: translateX(50%) translateY(51%);
+  }
+  25% {
+    transform: translateX(-8%) translateY(48%);
+  }
+  50% {
+    transform: translateX(34%) translateY(-41%);
+  }
+  75% {
+    transform: translateX(103%) translateY(-38%);
+  }
+  100% {
+    transform: translateX(50%) translateY(51%);
+  }
+}
+
+@keyframes bulbsMove3 {
+  0% {
+    left: 90%;
+    top: 45%;
+  }
+  25% {
+    left: 74%;
+    top: 80%;
+  }
+  50% {
+    left: 62%;
+    top: 81%;
+  }
+  75% {
+    left: 35%;
+    top: 46%;
+  }
+  100% {
+    left: 90%;
+    top: 45%;
+  }
+}
+
+@keyframes bulbsMove4 {
+  0% {
+    left: 81.6%;
+    top: 65%;
+  }
+  25% {
+    left: 50%;
+    top: 70%;
+  }
+  50% {
+    left: 31%;
+    top: 68%;
+  }
+  75% {
+    left: 28%;
+    top: 66%;
+  }
+  100% {
+    left: 81.6%;
+    top: 65%;
+  }
+}
+
+/* 🪟 vertical shadow panels */
+.lines {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(255, 255, 255, 0.3) 76.92%,
+    rgb(0 0 0 / 5%)
+  );
+  background-blend-mode: overlay;
+
+  background-size: 54px 100%;
+  background-blend-mode: overlay;
+
+  pointer-events: none;
+}
+
+/* animation of bulbs */
