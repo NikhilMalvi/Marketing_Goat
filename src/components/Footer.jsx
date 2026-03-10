@@ -172,8 +172,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[url('/src/assets/footer-bg.png')] bg-cover bg-center px-[15px] py-15 h-full w-full relative">
-      <div className="max-w-[1500px] mx-auto">
+    <footer className="bg-[url('/src/assets/footer-bg.png')] bg-cover bg-center px-3.75 py-15 h-full w-full relative">
+      <div className="max-w-375 mx-auto">
         {/* row 1 form section */}
 
         <Form
@@ -187,7 +187,7 @@ const Footer = () => {
         />
         {/* row 2 */}
         <div
-          className="w-full pt-[50px] border-t border-[#FFFFFF1A] flex lg:flex-nowrap flex-wrap gap-y-8 gap-x-0 lg:justify-between
+          className="w-full pt-12.5 border-t border-[#FFFFFF1A] flex lg:flex-nowrap flex-wrap gap-y-8 gap-x-0 lg:justify-between
         justify-start"
         >
           <div className="flex flex-col lg:w-[36%] md:w-1/2 w-full md:pr-16 pr-0 gap-5 lg:border-r border-[#FFFFFF26] border-none">
@@ -201,7 +201,7 @@ const Footer = () => {
               platforms.
             </p>
 
-            <ul className="text-white font-urbanist text-[18px] font-normal leading-[30px] flex flex-col gap-1.5">
+            <ul className="text-white font-urbanist text-[18px] font-normal leading-7.5 flex flex-col gap-1.5">
               <li>
                 <b>Email: </b>
                 <a href="mailto:hello@ITSolutions.com" className="">
@@ -226,7 +226,7 @@ const Footer = () => {
 
           {footerBox.map((item, index) => (
             <div
-              className="py-[34.5px] px-[30px] border-none flex items-center justify-between rounded-[18px] bg-[#FFFFFF0F]"
+              className="py-[34.5px] px-7.5 border-none flex items-center justify-between rounded-[18px] bg-[#FFFFFF0F]"
               key={index}
             >
               <img src={item.footerimg} alt={`Footer Icon ${index + 1}`} />
@@ -242,8 +242,8 @@ const Footer = () => {
 
         {/* row 4 */}
         <div className="w-full flex md:justify-between justify-center md:gap-0 gap-8 md:flex-nowrap flex-wrap pt-18 border-t border-[#FFFFFF1A] text-white">
-          <div className="mg:w-1/2 w-full flex items-center justify-center md:justify-start  gap-[30px]">
-            <div className="flex gap-[10px] items-center">
+          <div className="mg:w-1/2 w-full flex items-center justify-center md:justify-start gap-7.5">
+            <div className="flex gap-2.5 items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -263,7 +263,7 @@ const Footer = () => {
               </svg>
               <span className="peragraph">Say hi!</span>
             </div>
-            <div className="flex items-center text-white gap-[15px] peragraph">
+            <div className="flex items-center text-white gap-3.75 peragraph">
               {socialIcons.map((item, index) => (
                 <a href={item.link} key={index}>
                   {item.icon}
@@ -271,7 +271,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="mg:w-1/2 w-full flex items-center justify-center md:justify-end gap-[30px]">
+          <div className="mg:w-1/2 w-full flex items-center justify-center md:justify-end gap-7.5">
             <span className="peragraph">@2025 It Solutions LLC</span>
             <span className="peragraph bg-[#ffffff26]">
               <svg

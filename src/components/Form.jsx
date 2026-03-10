@@ -28,7 +28,7 @@ const Form = ({
   };
 
   return (
-    <div className="w-full pb-[60px]">
+    <div className="w-full pb-15">
       <h2 className={`${textClass} secondary-heading-2`}>{text}</h2>
 
       <form
@@ -38,26 +38,26 @@ const Form = ({
         <input
           type="text"
           placeholder="What’s your Name? *"
-          className={`${inputclass} h-[59px] px-5 py-2 rounded-[18px] focus:outline-none focus:ring-0 focus:ring-transparent focus:border-transparent`}
+          className={`${inputclass} h-14.75 px-5 py-2 rounded-[18px] focus:outline-none focus:ring-0 focus:ring-transparent focus:border-transparent`}
           required
         />
 
         <input
           type="text"
           placeholder="Your Company"
-          className={`${inputclass} h-[59px] px-5 py-2 rounded-[18px] focus:outline-none focus:ring-0 focus:ring-transparent focus:border-transparent`}
+          className={`${inputclass} h-14.75 px-5 py-2 rounded-[18px] focus:outline-none focus:ring-0 focus:ring-transparent focus:border-transparent`}
         />
 
         <input
           type="email"
           placeholder="Enter your Email *"
-          className={`${inputclass} h-[59px] px-5 py-2 rounded-[18px] focus:outline-none focus:ring-0 focus:ring-transparent focus:border-transparent`}
+          className={`${inputclass} h-14.75 px-5 py-2 rounded-[18px] focus:outline-none focus:ring-0 focus:ring-transparent focus:border-transparent`}
           required
         />
         <input
           type="tel"
           placeholder="Enter you Phone"
-          className={`${inputclass} h-[59px] px-5 py-2 rounded-[18px] focus:outline-none focus:ring-0 focus:ring-transparent focus:border-transparent`}
+          className={`${inputclass} h-14.75 px-5 py-2 rounded-[18px] focus:outline-none focus:ring-0 focus:ring-transparent focus:border-transparent`}
           required
         />
 
@@ -78,7 +78,7 @@ const Form = ({
             >
               Services
             </label>
-            <div className="flex items-center flex-wrap gap-[10px]">
+            <div className="flex items-center flex-wrap gap-2.5">
               {services.map((service, index) => (
                 <div key={index} className="w-auto">
                   <input
@@ -88,7 +88,7 @@ const Form = ({
                   />
                   <label
                     htmlFor={`service-${index}`}
-                    className={`${checkboxclass} font-urbanist font-normal text-[13px] leading-5 cursor-pointer inline-block py-[10px] px-[30px] rounded-[60px] h-auto w-auto `}
+                    className={`${checkboxclass} font-urbanist font-normal text-[13px] leading-5 cursor-pointer inline-block py-2.5 px-7.5 rounded-[60px] h-auto w-auto `}
                   >
                     {service}
                   </label>
@@ -101,7 +101,7 @@ const Form = ({
 
           <div className="w-full flex items-center justify-between mt-9 gap-5 lg:flex-nowrap flex-wrap">
             <div
-              className={`${uploadclass}  w-[70%] max-[1400px]:w-[60%] max-[1024px]:w-full h-[50px] border-dashed border rounded-full flex items-center justify-center`}
+              className={`${uploadclass}  w-[70%] max-[1400px]:w-[60%] max-[1024px]:w-full h-12.5 border-dashed border rounded-full flex items-center justify-center`}
             >
               <input
                 type="file"

@@ -19,14 +19,14 @@ const Header = () => {
 
   return (
     <section
-      className={`w-full  px-[15px] fixed top-0 z-1000 ${scrolled ? "bg-white py-[20px]" : "bg-transparent py-[50px]"} transition-all duration-1000`}
+      className={`w-full px-3.75 fixed top-0 z-1000 ${scrolled ? "bg-white py-5" : "bg-transparent py-12.5"} transition-all duration-1000`}
     >
-      <div className="max-w-[1500px] mx-auto flex justify-between items-center">
+      <div className="max-w-375 mx-auto flex justify-between items-center">
         <div className="text-2xl font-bold">
           <img src={logo} alt="" />
         </div>
         <div className="hidden lg:flex lg:items-center lg:gap-8">
-          <div className="flex gap-10 border border-[#4C95FF80] rounded-full w-[544px] h-[58px] px-5 items-center justify-center">
+          <div className="flex gap-10 border border-[#4C95FF80] rounded-full w-136 h-14.5 px-5 items-center justify-center">
             <div className="cursor-pointer text-paragraph-5 hover:text-heading menu-item">
               About us
             </div>
