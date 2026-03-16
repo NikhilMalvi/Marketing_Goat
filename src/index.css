@@ -107,6 +107,7 @@
   --color-paragraph-4: #404040;
   --color-paragraph-5: #606060;
   --color-border: #dddddd;
+  --color-border-2: #dbdbdb;
   --color-subtitle: #101010;
   --color-subtitle-2: #202020;
   --color-white: #ffffff;
@@ -138,7 +139,7 @@
 }
 
 .peragraph {
-  @apply font-urbanist text-base font-normal leading-[27px];
+  @apply font-urbanist text-base font-normal leading-6.75;
 }
 
 .accent {
@@ -179,7 +180,7 @@
   }
 
   .hero-heading {
-    @apply font-sans text-[45px] font-bold leading-[55px];
+    @apply font-sans text-[45px] font-bold leading-13.75;
   }
 }
 
@@ -189,7 +190,7 @@
   }
 
   .hero-heading {
-    @apply font-sans text-[35px] font-bold leading-[45px];
+    @apply font-sans text-[35px] font-bold leading-11.25;
   }
 }
 
@@ -203,7 +204,7 @@
   }
 
   .hero-heading {
-    @apply font-sans text-[28px] font-bold leading-[38px];
+    @apply font-sans text-[28px] font-bold leading-9.5;
   }
 }
 
@@ -363,3 +364,16 @@
 }
 
 /* animation of bulbs */
+
+.fade-in {
+  animation: fadeInAnimation 1s ease-in-out;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
