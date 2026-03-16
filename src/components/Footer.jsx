@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import Form from "./Form";
 import white_logo from "../assets/white_logo.png";
 import ListPage from "./ListPage";
-import footerimg1 from "../assets/footerimg1.png";
+import footerimg1 from "../assets/footerImg1.png";
 import starIcon from "../assets/starIcon.svg";
-import footerimg2 from "../assets/footerimg2.png";
-import footerimg3 from "../assets/footerimg3.png";
-import footerimg4 from "../assets/footerimg4.png";
-import footerimg5 from "../assets/footerimg5.png";
+import footerimg2 from "../assets/footerImg2.png";
+import footerimg3 from "../assets/footerImg3.png";
+import footerimg4 from "../assets/footerImg4.png";
+import footerimg5 from "../assets/footerImg5.png";
 import {
   FaFacebookF,
   FaInstagram,
