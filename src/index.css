@@ -127,7 +127,7 @@
 
 /* Custom font Style */
 .primary-heading {
-  @apply font-sans text-4xl font-bold;
+  @apply font-sans text-4xl font-bold leading-11.5;
 }
 
 .secondary-heading {

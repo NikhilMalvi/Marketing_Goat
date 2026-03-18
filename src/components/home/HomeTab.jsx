@@ -145,7 +145,7 @@ const HomeTab = () => {
         <div className="w-full flex lg:flex-row flex-col lg:items-stretch border border-border-2 rounded-[30px]">
           {/* tab column */}
           <div className="lg:w-1/4 w-full border-r border-border-2">
-            <div className="lg:flex flex-col grid md:grid-cols-4 grid-cols-1 gap-3.75 p-7.5">
+            <div className="lg:flex flex-col grid md:grid-cols-4 grid-cols-1 gap-3.75 md:p-7.5 p-6">
               {tabData.map((item) => (
                 <button
                   type="button"
@@ -153,7 +153,7 @@ const HomeTab = () => {
                   className={`cursor-pointer text-center py-5 lg:px-10 px-6 rounded-2xl hover:bg-accent hover:text-white transition duration-300  ${activeTab === item.id ? "bg-accent text-white" : "bg-background-2 text-[#909090]"}`}
                   onClick={() => handleTabClick(item.id)}
                 >
-                  <span className="lg:text-[18px] font-normal lg:leading-7 text-sm leading-full">
+                  <span className="lg:text-[18px] font-normal lg:leading-7 text-base leading-full">
                     {item.title}
                   </span>
                 </button>
@@ -161,20 +161,20 @@ const HomeTab = () => {
             </div>
           </div>
           {/* content column */}
-          <div className="lg:w-3/4 w-full p-7.5">
+          <div className="lg:w-3/4 w-full md:p-7.5 p-6">
             {tabData.map((item) => (
               <div
                 key={item.id}
                 className={`transition-all duration-300 ${activeTab === item.id ? "block fade-in" : "hidden"}`}
               >
                 <h3 className="secondary-heading mb-5">{item.title}</h3>
-                <p className="text-paragraph peragraph mb-5">
+                <div className="text-paragraph peragraph mb-5">
                   {item.content.map((content, index) => (
-                    <span key={index} className="mb-[14.4px] block">
+                    <div key={index} className="mb-[14.4px] block">
                       {content}
-                    </span>
+                    </div>
                   ))}
-                </p>
+                </div>
                 <ul className="list-none p-7.25 bg-[#4D7FFF24] rounded-[26px] grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
                   {item.innerContent.map((content, index) => (
                     <li

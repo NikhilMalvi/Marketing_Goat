@@ -43,7 +43,7 @@ const Header = () => {
               Our Work
             </div>
           </div>
-          <div className="cursor-pointer text-white rounded-full accent px-10 py-[18.5px] bg-linear-90 from-primary to-accent hover:bg-primary-hover transition duration-300 uppercase">
+          <div className="cursor-pointer text-white rounded-full accent px-10 py-[18.5px] bg-linear-90 from-primary to-accent hover:bg-linear-270 transition duration-300 uppercase">
             Contact us
           </div>
         </div>

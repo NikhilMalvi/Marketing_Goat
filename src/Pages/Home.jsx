@@ -5,6 +5,7 @@ import Counter from "../components/CustomCounter";
 import HomeHero from "../components/home/HomeHero";
 import SectionCompoment from "../components/home/SectionCompoment";
 import HomeTab from "../components/home/HomeTab";
+import IndustrySection from "../components/IndustrySection";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <HomeHero />
       <SectionCompoment />
       <HomeTab />
+      <IndustrySection />
     </>
   );
 };
