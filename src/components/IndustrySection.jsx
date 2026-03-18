@@ -318,9 +318,9 @@ const IndustrySection = () => {
         <div className="max-w-375 mx-auto flex gap-6 flex-col">
           <div className="flex justify-between lg:flex-nowrap flex-wrap lg:gap-x-5 gap-x-0 gap-y-5">
             <div className="lg:w-1/2 w-full text-white">
-              <h3 className="primary-heading lg:w-3/4 w-full">
+              <h2 className="primary-heading lg:w-3/4 w-full">
                 Smart Solutions for Efficient Business Transformation
-              </h3>
+              </h2>
             </div>
             <div className="lg:w-1/2 w-full text-[#EEEEEE] flex lg:justify-end justify-start">
               <p className="peragraph lg:w-3/4 w-full">
