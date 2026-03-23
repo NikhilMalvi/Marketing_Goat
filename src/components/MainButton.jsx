@@ -3,7 +3,7 @@ import React from "react";
 const MainButton = ({ text, className, type, storkeColor }) => {
   return (
     <a
-      className={`${className} w-full accent rounded-[40px] py-[16.5px] px-[39.6px] flex gap-2.5 items-center justify-center relative group hover:bg-primary transition duration-300 overflow-hidden`}
+      className={`${className} w-full accent rounded-[40px] py-[16.5px] px-[39.6px] flex gap-2.5 items-center justify-center relative group transition duration-300 overflow-hidden`}
       type={type}
     >
       <svg
