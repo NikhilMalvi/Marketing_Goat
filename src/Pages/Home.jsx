@@ -7,6 +7,7 @@ import SectionCompoment from "../components/home/SectionCompoment";
 import HomeTab from "../components/home/HomeTab";
 import IndustrySection from "../components/IndustrySection";
 import HomeWork from "../components/home/HomeWork";
+import HomeTool from "../components/home/HomeTool";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <HomeTab />
       <IndustrySection />
       <HomeWork />
+      <HomeTool />
     </>
   );
 };

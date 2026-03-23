@@ -135,7 +135,7 @@ const HomeTab = () => {
     <section className="w-full px-3.75 lg:py-25 py-15 relative overflow-hidden">
       <div className="max-w-375 mx-auto">
         <h2 className="primary-heading">How We Build Successful Website</h2>
-        <p className="peragraph text-paragraph mb-5">
+        <p className="peragraph text-paragraph mb-7.5">
           We provide specialized services in design, development, and
           marketing—dedicated to creating powerful digital experiences and
           driving tangible business success.
@@ -144,7 +144,7 @@ const HomeTab = () => {
         {/* tab */}
         <div className="w-full flex lg:flex-row flex-col lg:items-stretch border border-border-2 rounded-[30px]">
           {/* tab column */}
-          <div className="lg:w-1/4 w-full border-r border-border-2">
+          <div className="lg:w-1/4 w-full lg:border-r border-r-0 border-border-2">
             <div className="lg:flex flex-col grid md:grid-cols-4 grid-cols-1 gap-3.75 md:p-7.5 p-6">
               {tabData.map((item) => (
                 <button
