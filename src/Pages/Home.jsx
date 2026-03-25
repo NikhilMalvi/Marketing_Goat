@@ -8,6 +8,8 @@ import HomeTab from "../components/home/HomeTab";
 import IndustrySection from "../components/IndustrySection";
 import HomeWork from "../components/home/HomeWork";
 import HomeTool from "../components/home/HomeTool";
+import Benefits from "../components/Benefits";
+import { featuresData } from "./featuresData";
 
 const Home = () => {
   return (
@@ -18,6 +20,13 @@ const Home = () => {
       <IndustrySection />
       <HomeWork />
       <HomeTool />
+      <Benefits
+        featuresData={featuresData}
+        heading={"Benefits of Digital Marketing"}
+        description={
+          "Digital marketing offers global reach, targeted campaigns, measurable performance, and cost-effective growth, helping businesses boost visibility, engage audiences, increase conversions, and build long-term customer relationships across digital channels."
+        }
+      />
     </>
   );
 };

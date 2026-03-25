@@ -179,6 +179,10 @@
     @apply font-sans text-[22px] font-bold leading-6.5;
   }
 
+  .secondary-heading-2 {
+    @apply font-sans text-[22px] font-semibold leading-6.5;
+  }
+
   .hero-heading {
     @apply font-sans text-[45px] font-bold leading-13.75;
   }
@@ -201,6 +205,10 @@
 
   .secondary-heading {
     @apply font-sans text-[20px] font-bold leading-6;
+  }
+
+  .secondary-heading-2 {
+    @apply font-sans text-[20px] font-semibold leading-6;
   }
 
   .hero-heading {

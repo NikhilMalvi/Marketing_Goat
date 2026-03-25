@@ -7,6 +7,7 @@ import tooliImage5 from "../../assets/tooliImage5.png";
 import tooliImage6 from "../../assets/tooliImage6.png";
 import tooliImage7 from "../../assets/tooliImage7.png";
 import tooliImage8 from "../../assets/tooliImage8.png";
+import HeadingDescription from "../HeadingDescription";
 
 const HomeTool = () => {
   const [tabData, setTabData] = useState([
@@ -99,7 +100,7 @@ const HomeTool = () => {
         },
         {
           subid: 28,
-          subTitle: "Yoast SEO ",
+          subTitle: "Yoast SEO",
           icon: tooliImage8,
         },
       ],
@@ -193,7 +194,7 @@ const HomeTool = () => {
         },
         {
           subid: 48,
-          subTitle: "Yoast SEO ",
+          subTitle: "Yoast SEO",
           icon: tooliImage8,
         },
       ],
@@ -209,12 +210,13 @@ const HomeTool = () => {
   return (
     <section className="w-full px-3.75 lg:py-25 py-15 relative overflow-hidden bg-[#E5EDFF] lg:my-25 my-15">
       <div className="max-w-375 mx-auto flex flex-col gap-5">
-        <div className="flex flex-col items-center w-full mb-2.5">
-          <h2 className="primary-heading">Tech Stack & Tools we work with</h2>
-          <p className="peragraph text-paragraph">
-            Few of the many tools and technologies in our arsenal
-          </p>
-        </div>
+        <HeadingDescription
+          heading="Tech Stack & Tools we work with"
+          description="Few of the many tools and technologies in our arsenal"
+          className="text-center"
+          headingColor="text-black"
+          descriptionColor="text-paragraph-3"
+        />
         <div className="w-full flex lg:flex-row flex-col lg:items-stretch border border-border-2 rounded-[30px] bg-white">
           {/* tab column */}
           <div className="lg:w-1/4 w-full lg:border-r border-r-0 border-border-2 ">
@@ -244,7 +246,7 @@ const HomeTool = () => {
                   {item.content.map((i) => (
                     <div
                       className="sm:border-r border-r-0 border-b border-[#F0F0F0] py-12.5 px-5 flex flex-col items-center gap-5 text-center"
-                      key={i.id}
+                      key={i.subid}
                     >
                       <img src={i.icon} alt="" className="h-12.5" />
                       <h4 className="sub-heading">{i.subTitle}</h4>

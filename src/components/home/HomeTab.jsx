@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import HeadingDescription from "../HeadingDescription";
 
 const HomeTab = () => {
   const [tabData, setTabData] = useState([
@@ -134,12 +135,15 @@ const HomeTab = () => {
   return (
     <section className="w-full px-3.75 lg:py-25 py-15 relative overflow-hidden">
       <div className="max-w-375 mx-auto">
-        <h2 className="primary-heading">How We Build Successful Website</h2>
-        <p className="peragraph text-paragraph mb-7.5">
-          We provide specialized services in design, development, and
+        <HeadingDescription
+          heading="How We Build Successful Website"
+          description="We provide specialized services in design, development, and
           marketing—dedicated to creating powerful digital experiences and
-          driving tangible business success.
-        </p>
+          driving tangible business success."
+          className="text-start mb-5"
+          headingColor="text-black"
+          descriptionColor="text-paragraph-3"
+        />
 
         {/* tab */}
         <div className="w-full flex lg:flex-row flex-col lg:items-stretch border border-border-2 rounded-[30px]">

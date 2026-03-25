@@ -1,4 +1,5 @@
 import React from "react";
+import Background from "./Background";
 
 const IndustrySection = () => {
   const industryData = [
@@ -313,61 +314,57 @@ const IndustrySection = () => {
   ];
 
   return (
-    <section className="w-full px-3.75 lg:my-25 my-15 relative overflow-hidden">
-      <div className="max-w-450 mx-auto rounded-[34px] bg-linear-360 from-primary to-accent px-3.75 lg:py-20 py-15">
-        <div className="max-w-375 mx-auto flex gap-6 flex-col">
-          <div className="flex justify-between lg:flex-nowrap flex-wrap lg:gap-x-5 gap-x-0 gap-y-5">
-            <div className="lg:w-1/2 w-full text-white">
-              <h2 className="primary-heading lg:w-3/4 w-full">
-                Smart Solutions for Efficient Business Transformation
-              </h2>
-            </div>
-            <div className="lg:w-1/2 w-full text-[#EEEEEE] flex lg:justify-end justify-start">
-              <p className="peragraph lg:w-3/4 w-full">
-                We offer smart solutions powered by AI that help to streamline
-                operation and drive. performance. Work with us at Marketing GOAT
-                to empower faster decision-making & sustainable growth.
-              </p>
-            </div>
-          </div>
-
-          <div className="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 rounded-[26px] overflow-hidden bg-[#FFFFFF0F]">
-            {industryData.map((item, index) => (
-              <div
-                className="flex flex-col justify-between gap-10 p-7.5 w-auto border-b border-[#FFFFFF1A] lg:not-nth-[5n]:border-r md:not-nth-[4n]:border-r sm:not-nth-[2n]:border-r not-nth-[1n]:border-r lg:nth-[5n]:border-r-0 group bg-transparent hover:bg-white cursor-pointer transition-all ease-in duration-300"
-                key={item.id}
-              >
-                <div className="w-full text-white group-hover:text-[#0000004d] transition-all ease-in duration-300">
-                  {item.icon}
-                </div>
-
-                <a
-                  className="flex justify-between items-center font-sans text-[15px] leading-[100%] font-semibold gap-2 fill-white text-white group-hover:text-black transition-all ease-in duration-300"
-                  href="#"
-                >
-                  <span>{item.title}</span>
-
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="17"
-                    height="14"
-                    viewBox="0 0 17 14"
-                    fill="currentColor"
-                    stroke="currentColor"
-                  >
-                    <path
-                      opacity="0.3"
-                      d="M9.80427 13.3928L16.2109 6.95277L9.80427 0.512773C9.74641 0.43679 9.6729 0.374127 9.58871 0.329024C9.50453 0.283922 9.41164 0.257434 9.31633 0.251353C9.22102 0.245271 9.12551 0.25974 9.03628 0.293778C8.94704 0.327816 8.86617 0.380628 8.79912 0.448641C8.73207 0.516654 8.68042 0.598278 8.64766 0.687989C8.6149 0.777699 8.6018 0.873401 8.60924 0.968615C8.61668 1.06383 8.64449 1.15633 8.69079 1.23986C8.73709 1.32339 8.8008 1.396 8.8776 1.45277L13.6709 6.28611L0.9176 6.28611C0.740788 6.28611 0.571219 6.35634 0.446196 6.48137C0.321171 6.60639 0.250933 6.77596 0.250933 6.95277C0.250933 7.12958 0.321171 7.29915 0.446196 7.42418C0.571219 7.5492 0.740788 7.61944 0.9176 7.61944L13.6709 7.61944L8.8776 12.4528C8.75295 12.5783 8.68327 12.7482 8.6839 12.9251C8.68452 13.102 8.7554 13.2715 8.88093 13.3961C9.00647 13.5208 9.17638 13.5904 9.35329 13.5898C9.5302 13.5892 9.69962 13.5183 9.82427 13.3928L9.80427 13.3928Z"
-                      strokeWidth="0.5"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
-            ))}
-          </div>
+    <Background>
+      <div className="flex justify-between lg:flex-nowrap flex-wrap lg:gap-x-5 gap-x-0 gap-y-5">
+        <div className="lg:w-1/2 w-full text-white">
+          <h2 className="primary-heading lg:w-3/4 w-full">
+            Smart Solutions for Efficient Business Transformation
+          </h2>
+        </div>
+        <div className="lg:w-1/2 w-full text-[#EEEEEE] flex lg:justify-end justify-start">
+          <p className="peragraph lg:w-3/4 w-full">
+            We offer smart solutions powered by AI that help to streamline
+            operation and drive. performance. Work with us at Marketing GOAT to
+            empower faster decision-making & sustainable growth.
+          </p>
         </div>
       </div>
-    </section>
+
+      <div className="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 rounded-[26px] overflow-hidden bg-[#FFFFFF0F]">
+        {industryData.map((item, index) => (
+          <div
+            className="flex flex-col justify-between gap-10 p-7.5 w-auto border-b border-[#FFFFFF1A] lg:not-nth-[5n]:border-r md:not-nth-[4n]:border-r sm:not-nth-[2n]:border-r not-nth-[1n]:border-r lg:nth-[5n]:border-r-0 group bg-transparent hover:bg-white cursor-pointer transition-all ease-in duration-300"
+            key={item.id}
+          >
+            <div className="w-full text-white group-hover:text-[#0000004d] transition-all ease-in duration-300">
+              {item.icon}
+            </div>
+
+            <a
+              className="flex justify-between items-center font-sans text-[15px] leading-[100%] font-semibold gap-2 fill-white text-white group-hover:text-black transition-all ease-in duration-300"
+              href="#"
+            >
+              <span>{item.title}</span>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="14"
+                viewBox="0 0 17 14"
+                fill="currentColor"
+                stroke="currentColor"
+              >
+                <path
+                  opacity="0.3"
+                  d="M9.80427 13.3928L16.2109 6.95277L9.80427 0.512773C9.74641 0.43679 9.6729 0.374127 9.58871 0.329024C9.50453 0.283922 9.41164 0.257434 9.31633 0.251353C9.22102 0.245271 9.12551 0.25974 9.03628 0.293778C8.94704 0.327816 8.86617 0.380628 8.79912 0.448641C8.73207 0.516654 8.68042 0.598278 8.64766 0.687989C8.6149 0.777699 8.6018 0.873401 8.60924 0.968615C8.61668 1.06383 8.64449 1.15633 8.69079 1.23986C8.73709 1.32339 8.8008 1.396 8.8776 1.45277L13.6709 6.28611L0.9176 6.28611C0.740788 6.28611 0.571219 6.35634 0.446196 6.48137C0.321171 6.60639 0.250933 6.77596 0.250933 6.95277C0.250933 7.12958 0.321171 7.29915 0.446196 7.42418C0.571219 7.5492 0.740788 7.61944 0.9176 7.61944L13.6709 7.61944L8.8776 12.4528C8.75295 12.5783 8.68327 12.7482 8.6839 12.9251C8.68452 13.102 8.7554 13.2715 8.88093 13.3961C9.00647 13.5208 9.17638 13.5904 9.35329 13.5898C9.5302 13.5892 9.69962 13.5183 9.82427 13.3928L9.80427 13.3928Z"
+                  strokeWidth="0.5"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        ))}
+      </div>
+    </Background>
   );
 };
 
