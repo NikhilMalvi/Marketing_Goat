@@ -127,8 +127,9 @@ const HomeHero = () => {
         <MainButton
           text={"Request a Demo"}
           type="button"
-          className="bg-accent hover:bg-white text-white hover:text-accent w-max text-center uppercase leading-normal"
+          className="bg-accent hover:bg-white text-white hover:text-accent w-max text-center uppercase"
           storkeColor="#0048ff"
+          link="/"
         />
 
         <div className="flex justify-center md:justify-between gap-5 md:flex-nowrap flex-wrap md:w-full lg:w-257.25 w-70 mx-auto mt-25 md:mt-37.5">

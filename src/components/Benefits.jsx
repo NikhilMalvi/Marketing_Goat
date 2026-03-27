@@ -3,7 +3,7 @@ import Background from "./Background";
 import MainButton from "./MainButton";
 import HeadingDescription from "./HeadingDescription";
 
-const Benefits = ({ heading, description, featuresData }) => {
+const Benefits = ({ heading, description, featuresData, benefitsLink }) => {
   return (
     <Background>
       <HeadingDescription
@@ -44,8 +44,9 @@ const Benefits = ({ heading, description, featuresData }) => {
         <MainButton
           text={"Talk to our experts"}
           type="button"
-          className="bg-white hover:bg-accent text-black hover:text-white w-max text-center uppercase leading-normal"
+          className="bg-white hover:bg-accent text-black hover:text-white w-max text-center uppercase"
           storkeColor="white"
+          link={benefitsLink}
         />
       </div>
     </Background>

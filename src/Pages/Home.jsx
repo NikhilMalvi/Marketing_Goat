@@ -11,6 +11,7 @@ import HomeTool from "../components/home/HomeTool";
 import Benefits from "../components/Benefits";
 import { featuresData } from "./featuresData";
 import Solutions from "../components/Solutions";
+import Testimonial from "../components/Testimonial";
 
 const Home = () => {
   return (
@@ -27,8 +28,11 @@ const Home = () => {
         description={
           "Digital marketing offers global reach, targeted campaigns, measurable performance, and cost-effective growth, helping businesses boost visibility, engage audiences, increase conversions, and build long-term customer relationships across digital channels."
         }
+        benefitsLink="/"
       />
       <Solutions />
+
+      <Testimonial />
     </>
   );
 };

@@ -324,7 +324,7 @@ const HomeWork = () => {
             </p>
           </div>
 
-          <div className="p-7.5 rounded-[26px] flex flex-col gap-5 bg-linear-180 from-[#4C7FFF] to-[#0042E8] ">
+          <div className="p-7.5 rounded-[26px] flex flex-col justify-center gap-5 bg-linear-180 from-[#4C7FFF] to-[#0042E8] ">
             <h3 className="secondary-heading-2 text-white">
               Bringing Innovation Together
             </h3>
@@ -337,8 +337,9 @@ const HomeWork = () => {
             <MainButton
               text={"Build your own team"}
               type="button"
-              className="bg-white hover:bg-black text-accent hover:text-white w-max text-center uppercase leading-normal"
+              className="bg-white hover:bg-black text-accent hover:text-white w-max text-center uppercase"
               storkeColor="white"
+              link="/"
             />
           </div>
         </div>
