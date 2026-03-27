@@ -140,7 +140,7 @@ const HomeTab = () => {
           description="We provide specialized services in design, development, and
           marketing—dedicated to creating powerful digital experiences and
           driving tangible business success."
-          className="text-start mb-5"
+          className="text-start mb-8"
           headingColor="text-black"
           descriptionColor="text-paragraph-3"
         />

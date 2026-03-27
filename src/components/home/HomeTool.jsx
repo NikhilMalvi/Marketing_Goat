@@ -209,7 +209,7 @@ const HomeTool = () => {
 
   return (
     <section className="w-full px-3.75 lg:py-25 py-15 relative overflow-hidden bg-[#E5EDFF] lg:my-25 my-15">
-      <div className="max-w-375 mx-auto flex flex-col gap-5">
+      <div className="max-w-375 mx-auto flex flex-col gap-8">
         <HeadingDescription
           heading="Tech Stack & Tools we work with"
           description="Few of the many tools and technologies in our arsenal"

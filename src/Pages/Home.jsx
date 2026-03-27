@@ -10,6 +10,7 @@ import HomeWork from "../components/home/HomeWork";
 import HomeTool from "../components/home/HomeTool";
 import Benefits from "../components/Benefits";
 import { featuresData } from "./featuresData";
+import Solutions from "../components/Solutions";
 
 const Home = () => {
   return (
@@ -27,6 +28,7 @@ const Home = () => {
           "Digital marketing offers global reach, targeted campaigns, measurable performance, and cost-effective growth, helping businesses boost visibility, engage audiences, increase conversions, and build long-term customer relationships across digital channels."
         }
       />
+      <Solutions />
     </>
   );
 };
