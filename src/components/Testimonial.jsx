@@ -83,7 +83,7 @@ const Testimonial = () => {
           >
             {testimonials.map((item) => (
               <SwiperSlide key={item.id}>
-                <div className="md:p-6 px-0 py-5">
+                <div className="md:p-6 sm:p-4 p-3">
                   <div className="bg-white rounded-[30px] shadow-[0px_0px_30px_0px_#4C7FFF33] lg:p-10 md:p-8 p-6">
                     <div className="flex flex-col gap-5">
                       <div className="text-accent">
