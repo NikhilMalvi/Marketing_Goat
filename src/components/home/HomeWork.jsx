@@ -1,6 +1,7 @@
 import React from "react";
 import MainButton from "../MainButton";
 import HeadingDescription from "../HeadingDescription";
+import MainSection from "../MainSection";
 
 const HomeWork = () => {
   const homeWorkData = [
@@ -222,7 +223,7 @@ const HomeWork = () => {
   ];
 
   return (
-    <section className="w-full px-3.75 lg:py-25 py-15 relative overflow-hidden">
+    <MainSection>
       <div className="max-w-375 mx-auto flex flex-col gap-8">
         <HeadingDescription
           heading="We Work with"
@@ -344,7 +345,7 @@ const HomeWork = () => {
           </div>
         </div>
       </div>
-    </section>
+    </MainSection>
   );
 };
 

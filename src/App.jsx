@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className="overflow-x-hidden relative">
+    <div className="relative">
       <Header />
       <Home />
       <Footer />

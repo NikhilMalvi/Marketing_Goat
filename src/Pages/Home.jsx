@@ -12,6 +12,11 @@ import Benefits from "../components/Benefits";
 import { featuresData } from "./featuresData";
 import Solutions from "../components/Solutions";
 import Testimonial from "../components/Testimonial";
+import Process from "../components/Process";
+import CTA from "../components/CTA";
+import Faq from "../components/Faq";
+import BlogCard from "../components/Blog/BlogCard";
+import PageBlog from "../components/Blog/PageBlog";
 
 const Home = () => {
   return (
@@ -31,8 +36,16 @@ const Home = () => {
         benefitsLink="/"
       />
       <Solutions />
-
       <Testimonial />
+      <Process />
+      <CTA
+        className="bg-[#0042E8]"
+        ctaTitle="Get Started with Our SEO Services Today!"
+        ctaDescription="IT Solutions has the highly qualified and expert team of designer and developers, you need to start planning and executing your project today"
+      />
+      <Faq />
+      {/* <BlogCard /> */}
+      <PageBlog limit={3} />
     </>
   );
 };

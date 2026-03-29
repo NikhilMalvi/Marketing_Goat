@@ -4,6 +4,7 @@ import testImg1 from "../assets/testImg1.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
+import MainSection from "./MainSection";
 
 const Testimonial = () => {
   const testimonials = [
@@ -55,7 +56,7 @@ const Testimonial = () => {
   ];
 
   return (
-    <section className="w-full px-3.75 lg:py-25 py-15 relative overflow-hidden">
+    <MainSection>
       <div className="max-w-387 mx-auto">
         <div className="max-w-375 mx-auto">
           <HeadingDescription
@@ -156,7 +157,7 @@ const Testimonial = () => {
           </Swiper>
         </div>
       </div>
-    </section>
+    </MainSection>
   );
 };
 

@@ -5,6 +5,7 @@ import solutionImg2 from "../assets/solutionImg2.png";
 import solutionImg3 from "../assets/solutionImg3.png";
 import { useNavigate } from "react-router-dom";
 import MainButton from "./MainButton";
+import MainSection from "./MainSection";
 
 const Solutions = () => {
   const navigate = useNavigate();
@@ -34,7 +35,7 @@ const Solutions = () => {
   ];
 
   return (
-    <section className="w-full px-3.75 lg:py-25 py-15 relative overflow-hidden">
+    <MainSection>
       <div className="max-w-450 mx-auto">
         <HeadingDescription
           heading="Solutions We’ve Delivered"
@@ -120,7 +121,7 @@ const Solutions = () => {
           />
         </div>
       </div>
-    </section>
+    </MainSection>
   );
 };
 

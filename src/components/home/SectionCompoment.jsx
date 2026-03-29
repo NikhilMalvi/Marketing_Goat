@@ -3,10 +3,11 @@ import homeImage01 from "../../assets/homeImage01.png";
 import homeImage02 from "../../assets/homeImage02.png";
 import homeImage03 from "../../assets/homeImage03.png";
 import homeS2img from "../../assets/homeS2img.png";
+import MainSection from "../MainSection";
 
 const SectionCompoment = () => {
   return (
-    <section className="w-full px-3.75 lg:py-25 py-15 relative overflow-hidden">
+    <MainSection>
       <div className="max-w-7xl mx-auto flex justify-between lg:flex-nowrap flex-wrap lg:gap-x-12.5 gap-x-0 gap-y-12.5">
         <div className="flex flex-col gap-5 lg:w-3/5 w-full lg:order-1 order-2">
           <h2 className="primary-heading">
@@ -50,7 +51,7 @@ const SectionCompoment = () => {
           <img src={homeS2img} alt="SEO Strategy" className="w-auto" />
         </div>
       </div>
-    </section>
+    </MainSection>
   );
 };
 

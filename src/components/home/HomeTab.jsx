@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import HeadingDescription from "../HeadingDescription";
+import MainSection from "../MainSection";
 
 const HomeTab = () => {
   const [tabData, setTabData] = useState([
@@ -133,7 +134,7 @@ const HomeTab = () => {
   };
 
   return (
-    <section className="w-full px-3.75 lg:py-25 py-15 relative overflow-hidden">
+    <MainSection className="overflow-visible!">
       <div className="max-w-375 mx-auto">
         <HeadingDescription
           heading="How We Build Successful Website"
@@ -206,7 +207,7 @@ const HomeTab = () => {
           </div>
         </div>
       </div>
-    </section>
+    </MainSection>
   );
 };
 
