@@ -11,7 +11,7 @@ const PageBlog = ({ limit }) => {
   return (
     <MainSection>
       <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-center mb-8 lg:flex-nowrap flex-wrap">
+        <div className="flex justify-between items-center mb-8 lg:flex-nowrap flex-wrap gap-5">
           <h2 className="primary-heading">Latest news & updates</h2>
           <MainButton
             text={"View All"}

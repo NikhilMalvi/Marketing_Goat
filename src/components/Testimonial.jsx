@@ -113,7 +113,7 @@ const Testimonial = () => {
                         already seeing a strong return on investment.
                       </p>
                       <div className="flex gap-5 md:flex-nowrap flex-wrap justify-between items-center">
-                        <div className="flex items-center gap-4 w-1/2">
+                        <div className="flex items-center gap-4 md:w-1/2 w-full">
                           <img
                             src={testImg1}
                             alt="Artsion Grintsevich"
@@ -130,7 +130,7 @@ const Testimonial = () => {
                           </div>
                         </div>
 
-                        <div className="w-1/2 flex gap-3 items-center md:justify-end justify-normal text-accent">
+                        <div className="md:w-1/2 w-full flex gap-3 items-center md:justify-end justify-normal text-accent">
                           <span className="lg:text-[18px] font-semibold text-[16px]">
                             Let’s discuss your Creative idea
                           </span>
