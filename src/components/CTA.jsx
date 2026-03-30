@@ -11,7 +11,7 @@ const CTA = ({ className, ctaTitle, ctaDescription }) => {
         className={`max-w-375 mx-auto relative rounded-[60px] lg:py-15 md:py-13 py-12 px-3.75 ${className}`}
       >
         {/* overlay */}
-        <div className=" absolute top-0 left-0 w-full h-full bg-[url('/src/assets/overlayImg.png')] bg-cover bg-center"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-[url('/src/assets/overlayImg.png')] bg-cover bg-center"></div>
         <div className="max-w-7xl mx-auto relative flex items-center justify-between md:flex-nowrap flex-wrap gap-5">
           <div className="lg:w-[58%] md:w-1/2 w-full relative">
             <HeadingDescription

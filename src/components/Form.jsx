@@ -9,6 +9,7 @@ const Form = ({
   checkboxclass,
   colortype,
   uploadclass,
+  htmlForIndex,
 }) => {
   const services = [
     "UI/UX Design",
@@ -75,6 +76,7 @@ const Form = ({
           <div className="w-full">
             <label
               className={`${labelclass} font-urbanist font-medium text-base leading-5 mb-5 inline-block`}
+              htmlFor={`services-${htmlForIndex}`}
             >
               Services
             </label>
@@ -83,11 +85,11 @@ const Form = ({
                 <div key={index} className="w-auto">
                   <input
                     type="checkbox"
-                    id={`service-${index}`}
+                    id={`service-${index}-${htmlForIndex}`}
                     className={`custom-input ${colortype}`}
                   />
                   <label
-                    htmlFor={`service-${index}`}
+                    htmlFor={`service-${index}-${htmlForIndex}`}
                     className={`${checkboxclass} font-urbanist font-normal text-[13px] leading-5 cursor-pointer inline-block py-2.5 px-7.5 rounded-[60px] h-auto w-auto `}
                   >
                     {service}
@@ -114,7 +116,7 @@ const Form = ({
               {/* Custom Label */}
               <label
                 htmlFor="file-upload"
-                className="flex items-center gap-2 cursor-pointer font-urbanist font-normal text-[13px] leading-5 text-border"
+                className="flex items-center gap-2 cursor-pointer font-urbanist font-normal text-[13px] leading-5"
               >
                 {/* Icon */}
                 <svg

@@ -171,7 +171,7 @@ body {
 }
 
 .colortype2[type="checkbox"]:checked + label {
-  @apply bg-white text-black;
+  @apply bg-black text-white;
 }
 
 @media (max-width: 1024px) {

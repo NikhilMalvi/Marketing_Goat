@@ -184,6 +184,7 @@ const Footer = () => {
           checkboxclass="bg-[#FFFFFF33] border-none text-white"
           colortype="colortype1"
           uploadclass="border-[#ffffff33] text-border"
+          htmlForIndex="footer"
         />
         {/* row 2 */}
         <div

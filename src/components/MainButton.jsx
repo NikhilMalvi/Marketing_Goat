@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const MainButton = ({ text, className, type, storkeColor, link }) => {
   return (
-    <Link
+    <NavLink
       to={link}
       className={`${className} w-full accent rounded-[40px] py-[18.5px] px-[39.6px] flex gap-2.5 items-center justify-center relative group transition duration-300 overflow-hidden`}
       type={type}
@@ -39,7 +39,7 @@ const MainButton = ({ text, className, type, storkeColor, link }) => {
           strokeWidth="0.2"
         ></path>
       </svg>
-    </Link>
+    </NavLink>
   );
 };
 

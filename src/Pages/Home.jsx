@@ -9,7 +9,7 @@ import IndustrySection from "../components/IndustrySection";
 import HomeWork from "../components/home/HomeWork";
 import HomeTool from "../components/home/HomeTool";
 import Benefits from "../components/Benefits";
-import { featuresData } from "./featuresData";
+import { featuresData } from "../components/home/featuresData";
 import Solutions from "../components/Solutions";
 import Testimonial from "../components/Testimonial";
 import Process from "../components/Process";
