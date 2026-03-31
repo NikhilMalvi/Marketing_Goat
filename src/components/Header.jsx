@@ -28,9 +28,12 @@ const Header = () => {
         </NavLink>
         <div className="hidden lg:flex lg:items-center lg:gap-8">
           <div className="flex gap-10 border border-[#4C95FF80] rounded-full w-136 h-14.5 px-5 items-center justify-center">
-            <div className="cursor-pointer text-paragraph-5 hover:text-heading menu-item">
+            <Link
+              to="/about-us"
+              className="cursor-pointer text-paragraph-5 hover:text-heading menu-item"
+            >
               About us
-            </div>
+            </Link>
             <div className="cursor-pointer text-paragraph-5 hover:text-heading menu-item">
               Services
             </div>
