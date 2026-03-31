@@ -6,6 +6,7 @@ const Counter = ({
   duration = 2000,
   prefix = "",
   suffix = "",
+  className = "",
 }) => {
   const [count, setCount] = useState(start);
 
@@ -28,7 +29,7 @@ const Counter = ({
   }, [start, end, duration]);
 
   return (
-    <span>
+    <span className={`${className}`}>
       {prefix}
       {count}
       {suffix}
