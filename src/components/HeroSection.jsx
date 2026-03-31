@@ -3,7 +3,7 @@ import OverlayBackground from "./OverlayBackground";
 import MainButton from "./MainButton";
 import Counter from "./CustomCounter";
 
-const HeroSection = () => {
+const HeroSection = ({ pageTitle, pageHeading, pageDescription }) => {
   const counterData = [
     {
       id: 1,
@@ -41,22 +41,15 @@ const HeroSection = () => {
       <OverlayBackground />
 
       <div className="flex flex-col justify-center z-10 gap-5 max-w-375 mx-auto">
-        <div className="py-3 px-7.5 bg-[#FFFFFF1A] border border-border rounded-[60px] sub-heading font-semibold! leading-6 text-center text-[#444444] w-max">
-          About Us
+        <div className="py-3 px-7.5 bg-[#FFFFFF1A] border border-border rounded-[60px] sub-heading font-semibold! leading-none! text-center text-[#444444] w-max">
+          {pageTitle}
         </div>
         <div className="flex lg:gap-15 gap-5 justify-between lg:flex-nowrap flex-wrap">
           <div className="lg:w-1/2 w-full">
-            <h1 className="hero-heading">
-              Transforming Challenges into Smart, Future-Proof Outcomes
-            </h1>
+            <h1 className="hero-heading">{pageHeading}</h1>
           </div>
           <div className="flex flex-col gap-5 lg:w-1/2 w-full">
-            <p className="peragraph text-paragraph-2">
-              At It Solution, we blend technology with human insight to deliver
-              smart, user-focused solutions. We help startups and enterprises
-              simplify complex challenges through innovative, domain-specific
-              software that drives real impact and lasting value.
-            </p>
+            <p className="peragraph text-paragraph-2">{pageDescription}</p>
             <MainButton
               text={"Request a Demo"}
               type="button"

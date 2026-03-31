@@ -147,7 +147,7 @@ body {
 }
 
 .accent {
-  @apply font-sans text-[15px] leading-[1em] font-normal;
+  @apply font-sans text-[15px] leading-none! font-normal;
 }
 
 .menu-item {
