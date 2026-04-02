@@ -21,6 +21,7 @@ const Contact = () => {
             colortype="colortype2"
             uploadclass="border-[#0000004d] text-[#909090]"
             htmlForIndex="contact"
+            buttonClass="border border-accent"
           />
         </div>
       </MainSection>

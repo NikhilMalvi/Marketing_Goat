@@ -10,6 +10,7 @@ const Form = ({
   colortype,
   uploadclass,
   htmlForIndex,
+  buttonClass,
 }) => {
   const services = [
     "UI/UX Design",
@@ -138,7 +139,7 @@ const Form = ({
               <MainButton
                 text={"Let’s Connect"}
                 type="submit"
-                className="bg-accent hover:bg-white text-white hover:text-accent max-[1024px]:w-max"
+                className={`bg-accent hover:bg-white text-white hover:text-accent max-[1024px]:w-max ${buttonClass}`}
                 storkeColor="#0048ff"
               />
             </div>

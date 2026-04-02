@@ -13,6 +13,7 @@ const AboutUs = () => {
         pageTitle="About Us"
         pageHeading="Transforming Challenges into Smart, Future-Proof Outcomes"
         pageDescription="At It Solution, we blend technology with human insight to deliver smart, user-focused solutions. We help startups and enterprises simplify complex challenges through innovative, domain-specific software that drives real impact and lasting value."
+        className="lg:pt-[268.5px]!"
       />
       <WhoWeAre />
       <WeMakeDifference />

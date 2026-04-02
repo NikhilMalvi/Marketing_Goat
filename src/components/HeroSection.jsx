@@ -3,7 +3,12 @@ import OverlayBackground from "./OverlayBackground";
 import MainButton from "./MainButton";
 import Counter from "./CustomCounter";
 
-const HeroSection = ({ pageTitle, pageHeading, pageDescription }) => {
+const HeroSection = ({
+  pageTitle,
+  pageHeading,
+  pageDescription,
+  className = "",
+}) => {
   const counterData = [
     {
       id: 1,
@@ -36,7 +41,9 @@ const HeroSection = ({ pageTitle, pageHeading, pageDescription }) => {
   ];
 
   return (
-    <div className="relative w-full h-full overflow-hidden flex items-center justify-center px-3.75 lg:pt-75 lg:pb-20 md:pt-62.5 md:pb-15 pt-50 pb-15">
+    <div
+      className={`relative w-full h-full overflow-hidden flex items-center justify-center px-3.75 lg:pt-75 lg:pb-20 md:pt-62.5 md:pb-15 pt-50 pb-15 ${className}`}
+    >
       {/* <!-- Moving gradient --> */}
       <OverlayBackground />
 

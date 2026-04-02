@@ -210,7 +210,7 @@ const Process = () => {
                   key={i.id}
                 >
                   <div className="flex justify-between items-center gap-5 w-full">
-                    <h3 className="secondary-heading">{i.title}</h3>
+                    <h3 className="secondary-heading-2">{i.title}</h3>
                     <h4 className="font-sans font-semibold lg:text-[44px] md:text-[40px] sm:text-[38px] text-[36px] lg:leading-12 md:leading-10.5 sm:leading-10 leading-9.5 bg-[#9DC5FF] border_text text-white">
                       {i.id}
                     </h4>

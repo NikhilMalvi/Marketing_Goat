@@ -7,6 +7,7 @@ import IconImg4 from "../../assets/IconImg4.svg";
 import IconImg5 from "../../assets/IconImg5.svg";
 import IconImg6 from "../../assets/IconImg6.svg";
 import MainButton from "../MainButton";
+import ServiceCard from "../ServiceCard";
 
 const WhyChooseUs = () => {
   const featuresData = [
@@ -62,16 +63,7 @@ const WhyChooseUs = () => {
 
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
         {featuresData.map((feature) => (
-          <div
-            className="border border-[#CCDAFF] md:p-10 p-8 rounded-[30px] bg-white"
-            key={feature.id}
-          >
-            <div className="flex gap-5 items-center mb-5">
-              <img src={feature.icon} alt={feature.title} />
-              <h3 className="secondary-heading-2">{feature.title}</h3>
-            </div>
-            <p className="peragraph text-paragraph-3">{feature.description}</p>
-          </div>
+          <ServiceCard key={feature.id} feature={feature} />
         ))}
       </div>
       <div className="flex justify-center w-full">
