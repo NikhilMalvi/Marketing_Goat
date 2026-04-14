@@ -16,13 +16,44 @@ import digitalMarketingFaq from "../Data/DigitalService/digitalFaqData";
 import PageBlog from "../components/Blog/PageBlog";
 
 const DigitalMarketing = () => {
+  const counterData = [
+    {
+      id: 1,
+      number: 10,
+      suffix: "+",
+      start: 1,
+      label: "Problem- Solver for Digital Marketing",
+    },
+    {
+      id: 2,
+      number: 10,
+      suffix: "+",
+      start: 0,
+      label: "Years of Tech-Driven Impact",
+    },
+    {
+      id: 3,
+      number: 120,
+      suffix: "+",
+      start: 10,
+      label: "Countries where we make a Difference",
+    },
+    {
+      id: 4,
+      number: 96,
+      suffix: "%",
+      start: 10,
+      label: "Client trust built on results",
+    },
+  ];
+
   return (
     <>
       <HeroSection
         pageTitle="Digital Marketing"
         pageHeading="Creative Digital Marketing Services"
         pageDescription="IT Solution, a trusted IT solutions partner, empowers businesses with innovative, scalable, and technology-driven services. Our expert-led approach delivers tailored digital solutions that enhance performance, streamline operations, and drive growth."
-        className="lg:pt-[331.5px]! md:pt-62.5! pt-50!"
+        counterData={counterData}
       />
       <ServiceDetails
         servicesData={digitalData}
@@ -44,7 +75,7 @@ const DigitalMarketing = () => {
       <Solutions />
       <IndustrySection />
       <Testimonial />
-      <ServiceProcess processData={digitalProcess} />
+      <ServiceProcess processMainData={digitalProcess} />
       <Faq faqData={digitalMarketingFaq} />
       <PageBlog limit={3} />
     </>

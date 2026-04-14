@@ -3,7 +3,7 @@ import OverlayBackground from "../OverlayBackground";
 
 const ContactHero = () => {
   return (
-    <div className="relative w-full h-full overflow-hidden flex items-center justify-center px-3.75 lg:py-73 md:pt-62.5 py-50">
+    <div className="relative w-full h-full overflow-hidden flex items-center justify-center px-3.75 lg:py-73 md:pt-62.5 py-50 lg:min-h-228.25 md:min-h-237.25 sm:min-h-225.5 min-h-280.75">
       {/* <!-- Moving gradient --> */}
       <OverlayBackground />
 

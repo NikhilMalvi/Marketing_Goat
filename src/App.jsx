@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import NotFound from "./Pages/NotFound";
 import AboutUs from "./Pages/AboutUs";
 import DigitalMarketing from "./Pages/DigitalMarketing";
+import UiUX from "./Pages/UiUX";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/digital-marketing" element={<DigitalMarketing />} />
+        <Route path="/ui-ux" element={<UiUX />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

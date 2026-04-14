@@ -73,7 +73,7 @@ const StepsToEngage = () => {
                   </div>
                 </div>
 
-                <div className="w-full bg-[url(/src/assets/EngageBox.svg)] bg-top bg-cover bg-no-repeat py-12.5 px-7.5 text-center min-h-78 flex flex-col justify-center lg:border-[0px_1px_1px_1px] border-[#CCDFFF] rounded-[20px]">
+                <div className="w-full bg-[url(/src/assets/EngageBox.svg)] bg-top bg-cover bg-no-repeat py-12.5 px-7.5 text-center lg:min-h-78 min-h-70 flex flex-col justify-center border-[0px_1px_1px_1px] border-[#CCDFFF] lg:rounded-[20px] rounded-[40px]">
                   <h3 className="secondary-heading-2">{item.title}</h3>
                   <p className="peragraph mt-2.5 text-paragraph-3">
                     {item.description}

@@ -7,43 +7,10 @@ const HeroSection = ({
   pageTitle,
   pageHeading,
   pageDescription,
-  className = "",
+  counterData,
 }) => {
-  const counterData = [
-    {
-      id: 1,
-      number: 40,
-      suffix: "+",
-      start: 10,
-      label: "Problem- Solver with a purpose",
-    },
-    {
-      id: 2,
-      number: 10,
-      suffix: "+",
-      start: 0,
-      label: "Years of Tech-Driven Impact",
-    },
-    {
-      id: 3,
-      number: 120,
-      suffix: "+",
-      start: 10,
-      label: "Countries where we make a Difference",
-    },
-    {
-      id: 4,
-      number: 96,
-      suffix: "%",
-      start: 10,
-      label: "Client trust built on results ",
-    },
-  ];
-
   return (
-    <div
-      className={`relative w-full h-full overflow-hidden flex items-center justify-center px-3.75 lg:pt-75 lg:pb-20 md:pt-62.5 md:pb-15 pt-50 pb-15 ${className}`}
-    >
+    <div className="relative w-full h-full overflow-hidden flex items-center justify-center px-3.75 lg:pt-65 lg:pb-20 md:pt-62.5 md:pb-15 pt-50 pb-15 lg:min-h-228.25 md:min-h-237.25 sm:min-h-225.5 min-h-280.75">
       {/* <!-- Moving gradient --> */}
       <OverlayBackground />
 
@@ -67,10 +34,10 @@ const HeroSection = ({
           </div>
         </div>
 
-        <div className="flex justify-between gap-6 md:flex-nowrap flex-wrap w-full mt-25 md:mt-37.5">
+        <div className="flex justify-between lg:gap-6 md:flex-nowrap flex-wrap w-full mt-25 md:mt-37.5 sm:gap-x-0 sm:gap-y-6">
           {counterData.map((counter) => (
             <div
-              className="border-t border-[#0000001a] lg:w-1/4 w-full"
+              className="border-t border-[#0000001a] lg:w-1/4 sm:w-1/2 w-full"
               key={counter.id}
             >
               <p className="text-[15px] font-normal font-urbanist pt-2.5 mb-2">

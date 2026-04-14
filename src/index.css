@@ -425,3 +425,15 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
 }
+
+@media (max-width: 1024px) {
+  .scrollbarTable {
+    overflow-x: auto; /* ✅ use auto instead of scroll */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .scrollbarTable::-webkit-scrollbar {
+    display: none;
+  }
+}
