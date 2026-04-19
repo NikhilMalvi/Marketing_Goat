@@ -14,12 +14,21 @@ import Faq from "../components/Faq";
 import BlogCard from "../components/Blog/BlogCard";
 import PageBlog from "../components/Blog/PageBlog";
 import homeFaqData from "../components/home/HomeFaq";
+import homeS2img from "../assets/homeS2img.png";
 
 const Home = () => {
+  const componentData = {
+    title: "A Team of SEO Experts Delivering Measurable Impact",
+    description: [
+      "With over 4 years of hands-on experience, our dedicated SEO team brings deep industry knowledge and proven strategies to the table. From on-page optimization to advanced technical audits and content-driven growth, we’ve consistently helped businesses boost visibility, rankings, and ROI. Backed by data and driven by results, our experts stay updated with the latest algorithm changes to ensure your brand stays ahead in search.",
+      "Experienced SEO experts delivering tailored strategies that boost search rankings, drive quality traffic, and ensure long-term digital growth for your business.",
+    ],
+  };
+
   return (
     <>
       <HomeHero />
-      <SectionCompoment />
+      <SectionCompoment componentData={componentData} />
       <HomeTab />
       <IndustrySection />
       <HomeWork />

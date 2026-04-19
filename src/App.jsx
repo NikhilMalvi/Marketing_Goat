@@ -8,6 +8,8 @@ import NotFound from "./Pages/NotFound";
 import AboutUs from "./Pages/AboutUs";
 import DigitalMarketing from "./Pages/DigitalMarketing";
 import UiUX from "./Pages/UiUX";
+import GraphicDesigning from "./Pages/GraphicDesigning";
+import SocialMediaMarketing from "./Pages/SocialMediaMarketing";
 
 const App = () => {
   return (
@@ -20,6 +22,11 @@ const App = () => {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/digital-marketing" element={<DigitalMarketing />} />
         <Route path="/ui-ux" element={<UiUX />} />
+        <Route path="/graphic-design" element={<GraphicDesigning />} />
+        <Route
+          path="/social-media-marketing"
+          element={<SocialMediaMarketing />}
+        />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
